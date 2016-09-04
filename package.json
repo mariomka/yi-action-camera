@@ -1,0 +1,30 @@
+{
+  "name": "yi-action-camera",
+  "version": "0.1.0",
+  "description": "Yi Action Camera module for node",
+  "keywords": [
+    "yi",
+    "action",
+    "camera",
+    "xiaomi"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Mario Juárez",
+    "email": "mario@mjp.one",
+    "url": "http://www.mjp.one"
+  },
+  "files": [
+    "yi-action-camera.js",
+    "client.js",
+    "constant.js"
+  ],
+  "main": "yi-action-camera.js",
+  "repository": "mariomka/yi-action-camera",
+  "engines": {
+    "node": ">0.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
