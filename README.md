@@ -133,7 +133,7 @@ Type: `string`
 Absolute camera file path
 
 ## Config values
-You can check all config types and values in `constant.js` and access through `YiActionCamera.config`
+You can check all config types and values in `constant.js` and access through `yi.config`
 
 ## License
 
