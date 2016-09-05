@@ -1,5 +1,5 @@
 # yi-action-camera
-> Yi Action Camera module for node
+> Yi Action Camera module for node.
 
 Tested on Xiaomi Yi Action Camera (Not Yi 4K)
 
@@ -16,7 +16,7 @@ npm install --save yi-action-camera
 
 First of all connect Xiaomi Yi Action Camera via WiFi.
 
-Default password is `1234567890`
+Default password is `1234567890`.
 
 ```js
 const yi = require('yi-action-camera');
@@ -56,35 +56,35 @@ Default: `192.168.42.1`
 ### port
 Default: `7878`
 
-## API
+## API Reference
 
 ### connect()
-Connect to camera
+Connect to camera.
 
 Returns `Promise`
 
 ### disconnect()
-Close connection to camera
+Close connection to camera.
 
 Returns `Promise`
 
 ### takePhoto()
-Take a photo
+Take a photo.
 
 Returns `Promise`
 
 ### startRecord()
-Start video recording
+Start video recording.
 
 Returns `Promise`
 
 ### stopRecord()
-Stop video recording
+Stop video recording.
 
 Returns `Promise`
 
 ### getConfig()
-Get camera config
+Get camera config.
 
 Returns `Object`
 
@@ -104,14 +104,14 @@ Type: `string`
 Returns `Promise`
 
 ### downloadFile(filePath, outputPath)
-Download a file from camera
+Download a file from camera.
 
 #### filePath
 Required
 
 Type: `string`
 
-Absolute camera file path
+Absolute camera file path.
 
 #### outputPath
 Optional
@@ -120,20 +120,24 @@ Type: `string`
 
 Default: `./`
 
-Output host file path
+Output host file path.
+
+Returns `Promise`
 
 ### deleteFile(filePath)
-Delete a file from camera
+Delete a file from camera.
 
 #### filePath
 Required
 
 Type: `string`
 
-Absolute camera file path
+Absolute camera file path.
+
+Returns `Promise`
 
 ## Configuration values
-You can check all config types and values in [constant.js](constant.js) and access it through `yi.config`
+You can check all config types and values in [constant.js](constant.js) and access it through `yi.config`.
 
 ## License
 
