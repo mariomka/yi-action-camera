@@ -82,7 +82,6 @@ Client.sendAction = function (action, testFunc, param, type) {
 // On client receive data
 socketClient.on('data', function (data) {
     data = JSON.parse(data);
-    //console.log(data);
 
     listeners.filter(function (listener) {
         return !listener(data);
@@ -118,6 +117,5 @@ function sendMessage(message, testFunc, resolve) {
         });
     }
 
-    //console.log('write', message);
     socketClient.write(JSON.stringify(message));
 }
