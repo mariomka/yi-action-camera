@@ -89,7 +89,7 @@ Get camera config
 Returns `Object`
 
 ### setConfig(type, value)
-Set camera config
+Set camera config. See [configuration values](#configuration-values).
 
 #### type
 Required
@@ -132,8 +132,8 @@ Type: `string`
 
 Absolute camera file path
 
-## Config values
-You can check all config types and values in `constant.js` and access through `yi.config`
+## Configuration values
+You can check all config types and values in [constant.js](constant.js) and access it through `yi.config`
 
 ## License
 
