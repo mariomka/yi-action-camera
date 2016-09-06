@@ -82,7 +82,7 @@ YiActionCamera.getConfig = function () {
         });
 };
 
-// Get camera config
+// Set camera config
 YiActionCamera.setConfig = function (type, value) {
     return sendAction(constant.action.SET_CONFIG, function (data) {
         return (data.hasOwnProperty('rval') && data.hasOwnProperty('msg_id') && data.msg_id == constant.action.SET_CONFIG && data.hasOwnProperty('type') && data.type == type);

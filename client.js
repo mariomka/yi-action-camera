@@ -8,7 +8,7 @@ var socketClient = new net.Socket(),
     connected    = false,
     connecting   = false;
 
-// client
+// Client
 var Client = exports;
 
 Client.token = null;
