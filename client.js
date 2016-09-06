@@ -48,7 +48,7 @@ Client.connect = function (ip, port) {
 };
 
 Client.disconnect = function () {
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve) {
         socketClient.on('end', function () {
             resolve();
         });
@@ -61,7 +61,7 @@ Client.disconnect = function () {
 };
 
 Client.sendAction = function (action, testFunc, param, type) {
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve) {
         var message = {
             msg_id: action,
             token:  action == constant.action.REQUEST_TOKEN ? 0 : Client.token
