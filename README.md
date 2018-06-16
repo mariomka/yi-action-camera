@@ -34,7 +34,7 @@ yi.connect()
     })
     .then(function (filePath) {
         console.log('photo downloaded', filePath);
-        
+
         return yi.disconnect();
     })
     .then(function () {
@@ -82,6 +82,10 @@ Returns `Promise`
 Stop video recording.
 
 Returns `Promise`
+
+### startStream()
+Start live stream by url
+```rtsp://${ip}/live```
 
 ### getConfig()
 Get camera config.
