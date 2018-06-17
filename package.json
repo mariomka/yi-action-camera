@@ -1,6 +1,6 @@
 {
   "name": "yi-action-camera",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Yi Action Camera module for node",
   "keywords": [
     "yi",
