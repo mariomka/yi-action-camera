@@ -116,6 +116,13 @@ YiActionCamera.startStream = function () {
     })
 };
 
+// Stop a video stream
+YiActionCamera.stopStream = function () {
+  return sendAction(constant.action.STOP_STREAM, function (data) {
+        return (data.hasOwnProperty('type') && data.type == 'vf_stop');
+    })
+};
+
 // Send action
 function sendAction(action, testFunc, param, type) {
     if (YiActionCamera.autoConnect && !client.isConnected()) {

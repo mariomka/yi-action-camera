@@ -87,6 +87,13 @@ Returns `Promise`
 Start live stream by url
 ```rtsp://${ip}/live```
 
+Returns `Promise`
+
+### stopStream()
+Stop live stream
+
+Returns `Promise`
+
 ### getConfig()
 Get camera config.
 

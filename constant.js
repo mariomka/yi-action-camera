@@ -11,7 +11,8 @@ Constants.action = {
     DELETE_FILE:   1281,
     GET_CONFIG:    3,
     SET_CONFIG:    2,
-    START_STREAM:  259
+    START_STREAM:  259,
+    STOP_STREAM:   260
 };
 
 Constants.config = {
