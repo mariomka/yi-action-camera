@@ -100,7 +100,7 @@ YiActionCamera.downloadFile = function (filePath, outputPath) {
     return new Promise(function (resolve, reject) {
         http.get(fileHttpPath, function (response) {
             response.pipe(outputFileStream, './');
-            outputFileStream.on("close", function () {
+            outputFileStream.on('close', function () {
                 resolve(outputFilePath)
             })
         })
