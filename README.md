@@ -1,4 +1,9 @@
 # yi-action-camera
+
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Latest Version on NPM](https://img.shields.io/npm/v/yi-action-camera.svg?style=flat-square)](https://npmjs.com/package/yi-action-camera)
+[![npm](https://img.shields.io/npm/dt/yi-action-camera.svg?style=flat-square)](https://www.npmjs.com/package/yi-action-camera)
+
 > Yi Action Camera module for node.
 
 Tested on Xiaomi Yi Action Camera (Not Yi 4K)
