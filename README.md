@@ -3,9 +3,6 @@
 
 Tested on Xiaomi Yi Action Camera (Not Yi 4K)
 
-## Work in progress
-> Keep in mind that isn't a release or stable version. Next versions can have broken changes.
-
 ## Install
 
 ```shell
