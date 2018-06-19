@@ -10,7 +10,9 @@ Constants.action = {
     STOP_RECORD:   514,
     DELETE_FILE:   1281,
     GET_CONFIG:    3,
-    SET_CONFIG:    2
+    SET_CONFIG:    2,
+    START_STREAM:  259,
+    STOP_STREAM:   260
 };
 
 Constants.config = {

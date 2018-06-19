@@ -110,6 +110,20 @@ YiActionCamera.downloadFile = function (filePath, outputPath) {
     });
 };
 
+// Start a video stream
+YiActionCamera.startStream = function () {
+    return sendAction(constant.action.START_STREAM, function (data) {
+        return (data.hasOwnProperty('type') && data.type == 'vf_start');
+    })
+};
+
+// Stop a video stream
+YiActionCamera.stopStream = function () {
+  return sendAction(constant.action.STOP_STREAM, function (data) {
+        return (data.hasOwnProperty('type') && data.type == 'vf_stop');
+    })
+};
+
 // Send action
 function sendAction(action, testFunc, param, type) {
     if (YiActionCamera.autoConnect && !client.isConnected()) {
