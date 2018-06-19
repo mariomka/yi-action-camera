@@ -86,7 +86,7 @@ Stop video recording.
 Returns `Promise`
 
 ### startStream()
-Start live stream by url
+Start live stream by url (Default ip: `192.168.42.1`)
 ```rtsp://${ip}/live```
 
 Returns `Promise`
