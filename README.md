@@ -149,6 +149,18 @@ Absolute camera file path.
 
 Returns `Promise`
 
+### listFiles(folderPath)
+List media files from a given folder.
+
+#### folderPath
+Required
+
+Type: `string`
+
+Absolute camera folder path.
+
+Returns `Promise`
+
 ## Configuration values
 You can check all config types and values in [constant.js](constant.js) and access it through `yi.config`.
 
