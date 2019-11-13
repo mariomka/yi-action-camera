@@ -12,7 +12,8 @@ Constants.action = {
     GET_CONFIG:    3,
     SET_CONFIG:    2,
     START_STREAM:  259,
-    STOP_STREAM:   260
+    STOP_STREAM:   260,
+    LIST_FILES:    1282
 };
 
 Constants.config = {

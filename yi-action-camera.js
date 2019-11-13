@@ -124,6 +124,16 @@ YiActionCamera.stopStream = function () {
     })
 };
 
+// List files from a folder
+YiActionCamera.listFiles = function (folderPath) {
+    return sendAction(constant.action.LIST_FILES, function (data) {
+        return (data.hasOwnProperty('rval') && data.hasOwnProperty('msg_id') && data.msg_id == constant.action.LIST_FILES);
+    }, folderPath)
+        .then(function (listing) {
+            return listing;
+        });
+}
+
 // Send action
 function sendAction(action, testFunc, param, type) {
     if (YiActionCamera.autoConnect && !client.isConnected()) {

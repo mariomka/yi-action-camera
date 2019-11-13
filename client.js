@@ -110,7 +110,15 @@ function sendMessage(message, testFunc, resolve) {
             var result = !!testFunc(data);
 
             if (result) {
-                resolve(data.hasOwnProperty('param') ? data.param : null);
+                if (data.hasOwnProperty('param')) {
+                    resolve(data.param);
+                }
+                else if (data.hasOwnProperty('listing')) {
+                    resolve(data.listing);
+                }
+                else {
+                    resolve(null);
+                }
             }
 
             return result;
